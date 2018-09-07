@@ -3,13 +3,16 @@ body {
   --main-text-color: #01FFFF;
   --main-link-color: #FF9A56;
 
-  font-family: 'Anonymous Pro', monospace;
   color: var(--main-text-color);
+  font-family: 'Anonymous Pro', monospace;
+  line-height: 1.5em;
+
   background-color: var(--main-bg-color);
   background-image: url(body_bg.png);
 }
 
 h3 {
+  margin-bottom: 0em;
   border-bottom: solid 1px var(--main-text-color);
 }
 
@@ -50,4 +53,8 @@ section.header {
 
 section.sponsors {
   vertical-align: middle;
+}
+
+article.event {
+  margin-bottom: 2.5em;
 }
