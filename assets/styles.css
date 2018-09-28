@@ -51,8 +51,9 @@ section.header {
   background-position: center;
 }
 
-section.sponsors {
-  vertical-align: middle;
+article.sponsors {
+  display: flex;
+  justify-content: space-around;
 }
 
 article.event {
