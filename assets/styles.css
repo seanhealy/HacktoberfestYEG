@@ -10,7 +10,15 @@ body {
   background-color: var(--main-bg-color);
   background-image: url(body_bg.png);
 }
-
+canvas {
+  position:absolute;
+  top:0;
+  left:20%;
+  width:100%;
+  height:100%;
+  margin:0;
+  z-index:-1;
+  }
 h3 {
   margin-bottom: 0em;
   border-bottom: solid 1px var(--main-text-color);

@@ -87,6 +87,95 @@
 
   </section>
 
-  <!-- <script src="js/scripts.js"></script> -->
+  <script src="assets/p5.min.js"></script>
+  <script>
+  if(window.addEventListener){
+    keys = [];
+    konami = '38,38,40,40,37,39,37,39,66,65';
+    window.addEventListener('keyup',function(e){
+      keys.push(e.keyCode);
+      if(keys.toString().indexOf(konami) >= 0){
+      keys = [];
+      rainStart();
+      }
+    },true);
+  }
+
+  
+// inspired by Text Rain (1999) by Camille Utterback & Romy Achituv 
+// Coded by Amanda Lee, Melissa Parker, and Yeseul Song
+
+var textPool = ['🎃'];
+var texts = [];
+var textY = [];
+var textSpeed = [];
+var eachSpeed = [];
+
+var numIndex;
+var minSpeed = 0.8;
+var maxSpeed = 1.5;
+var tSize = 16;
+var rectX;
+var rectY = 430;
+var rectW = 110;
+var rectH = 10;
+var ellipseX = 440;
+var ellipseY = 60;
+var ellipseSize = 70;
+
+function setup() {
+  console.log(window.innerWidth)
+  canvas = createCanvas(window.innerHeight,window.innerWidth);
+  canvas.width = window.innerWidth;
+  // rainStart(); 
+  
+}
+
+function draw() {
+// console.log(frameRate());
+  background('#582D41');
+
+  
+  
+
+
+
+  // text rains
+
+  for (var i = 0; i < 100; i++) {
+    
+      text(texts[i], i*10, textY[i]);
+      if (i*10 > rectX-tSize/2 && i*10 < rectX+rectW-tSize/10 && textY[i] > rectY - maxSpeed && textY[i] < rectY + maxSpeed) {
+        textSpeed[i] = 0;
+      }
+      if (i*10 < rectX-tSize/2 || i*10 > rectX+rectW-tSize/10) {             
+        textSpeed[i] = eachSpeed[i];    
+      } 
+      textY[i]+=textSpeed[i];
+   }
+  
+  fill(0);
+  
+}
+
+function rainStart() {
+  textSize(tSize);  
+  noStroke();
+  for (var i = 0; i < 100; i++) {
+      // pick a random text
+      numIndex = floor(random(textPool.length));
+      texts[i] = textPool[numIndex];
+      // append to the push array
+      // textY[i] = random(0, height/2)
+      textY[i] = random(-300,0); 
+      eachSpeed[i] = random(minSpeed, maxSpeed);
+      textSpeed[i] = eachSpeed[i];
+  }
+}
+
+
+
+
+  </script>
 </body>
 </html>
