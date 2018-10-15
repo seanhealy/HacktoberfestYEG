@@ -27,6 +27,11 @@ a.button {
   border: solid 1px var(--main-link-color);
 }
 
+a.button:hover {
+  color: var(--main-bg-color);
+  background-color: var(--main-link-color);
+}
+
 a.sponsor {
   display: inline-block;
   width: 250px;
