@@ -1,0 +1,29 @@
+.card {
+    box-shadow: 0 4px 8px 0 black;
+    transition: 0.3s;
+    width: 300px;
+}
+
+.card-case {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card > div {
+    padding: 20px;
+}
+
+.card-title {
+    text-align: center;
+    border-bottom: 2px solid #01FFFF;
+}
+
+.card-title h3 {
+    border: none;
+}
+
+.card-link {
+    border-top: 2px solid #01FFFF;
+    text-align: center;
+}
