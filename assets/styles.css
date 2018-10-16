@@ -22,9 +22,14 @@ a {
 
 a.button {
   text-decoration: none;
-  padding: 3px 12px;
+  padding: 10px 12px;
   border-radius: 6px;
   border: solid 1px var(--main-link-color);
+}
+
+a.button:hover {
+  color: var(--main-bg-color);
+  background-color: var(--main-link-color);
 }
 
 a.sponsor {
@@ -37,14 +42,13 @@ a.sponsor img {
 }
 
 section {
-  width: 960px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 
 section.header {
-  height: 400px;
-
+  height: 50vh;
   background-size: contain;
   background-image: url(header_bg.png);
   background-repeat: no-repeat;
