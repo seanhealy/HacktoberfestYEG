@@ -1,17 +1,27 @@
 body {
   --main-bg-color: #152347;
-  --main-text-color: #AAB2C0;
+  --main-text-color: #aab2c0;
   --main-link-color: #ff00aa;
   --main-header-color: #fff;
 
   color: var(--main-text-color);
-  font-family: 'Anonymous Pro', monospace;
+  font-family: "Anonymous Pro", monospace;
   line-height: 1.5em;
 
   background-color: var(--main-bg-color);
 }
 
-h1, h2, h3 {
+hr {
+  height: 2px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  border: none;
+  background-color: var(--main-header-color);
+}
+
+h1,
+h2,
+h3 {
   color: var(--main-header-color);
 }
 
