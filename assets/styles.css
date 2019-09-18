@@ -1,14 +1,28 @@
 body {
-  --main-bg-color: #582D41;
-  --main-text-color: #01FFFF;
-  --main-link-color: #FF9A56;
+  --main-bg-color: #152347;
+  --main-text-color: #aab2c0;
+  --main-link-color: #ff00aa;
+  --main-header-color: #fff;
 
   color: var(--main-text-color);
-  font-family: 'Anonymous Pro', monospace;
+  font-family: "Anonymous Pro", monospace;
   line-height: 1.5em;
 
   background-color: var(--main-bg-color);
-  background-image: url(body_bg.png);
+}
+
+hr {
+  height: 2px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  border: none;
+  background-color: var(--main-header-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--main-header-color);
 }
 
 h3 {
@@ -58,6 +72,7 @@ section.header {
 article.sponsors {
   display: flex;
   justify-content: space-around;
+  margin-top: 1em;
 }
 
 article.event {
