@@ -48,11 +48,16 @@ a.button:hover {
 
 a.sponsor {
   display: inline-block;
+  position: relative;
   width: 250px;
+  height: 100px;
 }
 
 a.sponsor img {
+  position: absolute;
   width: 100%;
+  top: 50px;
+  transform: translateY(-50%);
 }
 
 section {
