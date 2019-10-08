@@ -55,6 +55,7 @@ a.sponsor {
 }
 
 a.sponsor img {
+  display: block;
   position: absolute;
   max-width: 100%;
   max-height: 100%;
