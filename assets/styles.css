@@ -49,6 +49,7 @@ a.button:hover {
 a.sponsor {
   display: inline-block;
   position: relative;
+  text-align: center;
   width: 250px;
   height: 100px;
 }
